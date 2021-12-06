@@ -1,0 +1,15 @@
+
+.header_titulo{
+    font-weight: 600;
+    font-size: 5rem;
+
+}
+.header_navBar{
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
+.header_navBar_links{
+    text-decoration: none;
+    color: black;
+}
