@@ -1,12 +1,16 @@
 import React from "react";
 
-const NavBar = () => {
-    const linksNavBar = ["Inicio", "Ofertas", "Destacados", "Hacenos Tu Consulta"]
+
+//COMPONENTES
+import IconoCarrito from "./CartWidget";
+
+const NavBar = (props) => {
     return (
         <nav className="header_navBar">  
-            {linksNavBar.map((link) => {
+            {props.links.map((link) => {
                 return <a href="#" className="header_navBar_links">{link}</a>
             })}
+            <IconoCarrito/>
         </nav>
     )
 };
