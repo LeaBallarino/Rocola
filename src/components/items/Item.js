@@ -13,7 +13,7 @@ const Item = ({album}) => {
             <p className="itemAlbum__precio"><strong>Precio: </strong>{album.precio}</p>
             <div className="itemAlbum__masInfoSpotify">
                 <button id="" className="botonMasInfo"><i className="fas fa-plus-circle"></i></button>
-                <a href="" className="itemAlbum__masInfoSpotify__boton" target="_blank"><i className="fab fa-spotify"></i></a>
+                <a href={album.URLSpotify} className="itemAlbum__masInfoSpotify__boton" target="_blank"><i className="fab fa-spotify"></i></a>
             </div>
             <button id=""  className="boton boton--negro botonCarrito" type="button"><i className="fas fa-shopping-cart boton-agregarAlCarrito--icono"></i></button>
         </div>
