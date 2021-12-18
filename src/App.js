@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 //COMPONENTES
 import Header from "./components/header/Header"
-import NavBar from './components/header/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './components/items/ItemListContainer';
+
 
 function App() {
   return (
