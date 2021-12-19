@@ -109,7 +109,7 @@ const ItemListContainer = () => {
        promesa
        .then((catalogo) => {setAlbumes(catalogo)})
        .catch((mensaje) => {console.log(mensaje)});
-    })
+    },[])
     const onAdd = (cantidad) => {
         console.log(`Agregaste ${cantidad} al carrito`)
     }
