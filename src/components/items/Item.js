@@ -3,8 +3,7 @@ import react from "react";
 //ESTILOS
 import "./items.css"
 
-const Item = ({album}) => {
-    
+const Item = ({album}) => {   
     return (
         <div className="itemAlbum">
             <img className="itemAlbum__imagen" src={album.imagen} alt={album.titulo,album.artista}/>

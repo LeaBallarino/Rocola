@@ -101,12 +101,21 @@ const albumes = [
 const ItemListContainer = () => {
     const [productos, setAlbumes] = useState([]);
     useEffect(() => {
-        setTimeout(() => {
-            setAlbumes(albumes)
-        },2000);
+        const promesa = new Promise ((res, rej) => {
+            setTimeout(() => {
+               res(albumes)
+            },2000)
+       });
+       promesa
+       .then((catalogo) => {setAlbumes(catalogo)})
+       .catch((mensaje) => {console.log(mensaje)});
     })
+    const onAdd = (cantidad) => {
+        console.log(`Agregaste ${cantidad} al carrito`)
+    }
     return (
-        <>    
+        <>   
+            <ItemCount initial={1} stock={10} onAdd={onAdd}/> 
             <ItemList productos={productos}/>
         </>
     ) 
